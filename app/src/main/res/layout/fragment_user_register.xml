@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserStart.UserRegisterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_image"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/dark_blue"
+            />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:background="@drawable/border_layout"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <EditText
+            android:id="@+id/ed_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:background="@drawable/border_layout"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/border_layout"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/border_layout"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="15dp"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <EditText
+            android:id="@+id/ed_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:background="@drawable/border_layout"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="15dp"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

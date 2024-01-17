@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UserPanal.UserProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_Image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_Image"
+            android:layout_marginLeft="20dp"
+            android:text="My Profile"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/background"
+        android:scaleType="fitXY"
+        android:src="@drawable/cover_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cover_image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/profile_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_image"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/ed_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/border_layout"
+            android:gravity="top"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_bio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Enter your Bio..."
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/border_layout"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_experience"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Enter your Experience..."
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/border_layout"
+            android:gravity="top"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Save"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

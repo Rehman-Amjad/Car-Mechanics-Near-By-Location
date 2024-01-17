@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/userName_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marquee Add Date"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/userEmail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garage Name"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_below="@+id/cover_image"
+            />
+
+        <TextView
+            android:id="@+id/userPhone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garage Name"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_below="@+id/marqueeName_text"
+            />
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete"
+           android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

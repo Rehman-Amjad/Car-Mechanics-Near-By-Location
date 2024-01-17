@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UserPanal.BookGarageActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_Image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/back_Image"
+            android:text="Garage Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        >
+        <LinearLayout
+            android:id="@+id/dataField_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complete your Booking Details"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_blue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name*"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/border_layout"
+                android:hint="Full Name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number*"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <EditText
+                android:id="@+id/ed_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:inputType="number"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/border_layout"
+                android:hint="Phone Number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Persons"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <EditText
+                android:id="@+id/ed_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:inputType="number"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/border_layout"
+                android:hint="Number of persons"
+                android:gravity="top"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <EditText
+                android:id="@+id/ed_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:inputType="text"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/border_layout"
+                android:hint="Message"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <TextView
+                android:id="@+id/ed_bookingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/border_layout"
+                android:hint="Select Date"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Time"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/dark_blue"
+                />
+
+            <TextView
+                android:id="@+id/ed_bookingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/border_layout"
+                android:hint="Select Time"
+                android:gravity="top"
+                />
+
+            <Button
+                android:id="@+id/btn_bookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:textAllCaps="false"
+                app:cornerRadius="10dp"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

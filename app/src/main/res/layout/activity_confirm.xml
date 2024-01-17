@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Start.ConfirmActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/confirm_image"
+        />
+
+    <TextView
+        android:id="@+id/tct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Choose Best Car Mechanics"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:background="@drawable/confirm_background"
+        >
+
+        <Button
+            android:id="@+id/btn_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:text="Continue with Admin"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Garage Owner"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_admin"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_owner"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_button_background"
+            android:text="I'm User"
+            android:textColor="@color/dark_blue" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

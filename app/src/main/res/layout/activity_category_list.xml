@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AdminPanal.CategoryListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/bumper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUMPER RR / FRT"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/fender_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FENDER FRT / LH / RH EACH"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/door_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOOR"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/bonnet_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BONNET"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/diggi_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIGGI / TAIL GATE"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/roof_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ROOF PANEL"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/screen_replace_frt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCREEN REPLACE FRT"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/screen_replace_rr_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCREEN REPLACE RR"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/dashboard_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DASHBOARD ASSEMBLY R11"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+
+        <TextView
+            android:id="@+id/room_fitting_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ROOM FITTING R/1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/engine_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENGINE R/1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/suspension_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUSPENSION R/1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/frame_repairing_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FRAME REPAIRING (CAR)"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/wheel_alignment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WHEEL ALIGNMENT"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/door_glass_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOOR GLASS REPLACE"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/door_mirror_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOOR MIRROR REPLACE"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/loading_cabin_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOADING CABIN EACH SIDE"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tail_gate_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAIL GATE HILUX"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/head_light_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HEAD LIGHT CHANGED"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/back_light_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK LIGHT CHANGED"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/radiator_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RADIATOR / CONDENSER R/1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/full_compound_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FULL COMPOUND POLISH"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/interior_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INTERIOR DETAILING"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/under_coating_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNDER COATING"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray"/>
+    </LinearLayout>
+
+</ScrollView>

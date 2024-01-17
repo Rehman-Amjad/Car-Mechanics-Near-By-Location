@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AdminPanal.AddGarageActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_Image"
+            android:layout_marginLeft="20dp"
+            android:text="Add Details"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Garage Cover Image"
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/cover_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/add_cover_image"
+                />
+
+            <LinearLayout
+                android:id="@+id/dataField_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/text_heading"
+                android:layout_margin="20dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garage Name"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_garageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_blue"
+                    android:background="@drawable/border_layout"
+                    android:hint="Garage Name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garage Owner Name"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_garageOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/dark_blue"
+                    android:background="@drawable/border_layout"
+                    android:hint="Marquee Owner Name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garage Contact Number"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_garageContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:inputType="number"
+                    android:textColor="@color/dark_blue"
+                    android:background="@drawable/border_layout"
+                    android:hint="Garage Number"
+                    android:gravity="top"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garage Bio"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_garageBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_layout"
+                    android:hint="bio..."
+                    android:gravity="top"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garage Address"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_garageAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_layout"
+                    android:hint="Address..."
+                    android:gravity="top"
+                    />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/white"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

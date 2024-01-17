@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "630730059591",
+    "project_id": "garage-c147d",
+    "storage_bucket": "garage-c147d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630730059591:android:faf3747359a671e127e662",
+        "android_client_info": {
+          "package_name": "com.technogenis.carmechanics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdgWqfZFrgvRh6xs5lhVlrtb2ohwZnC3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

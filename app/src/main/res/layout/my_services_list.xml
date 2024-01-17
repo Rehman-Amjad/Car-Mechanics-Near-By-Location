@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/garage"
+            app:tint="@color/dark_blue" />
+
+        <TextView
+            android:id="@+id/services_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/image_layout"
+            android:layout_toRightOf="@+id/cover_image"
+            android:padding="5dp"
+            android:text="Service Name"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/service_charges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Charges"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_toLeftOf="@+id/image_layout"
+            android:layout_toRightOf="@+id/cover_image"
+            android:layout_below="@+id/services_name"
+            />
+
+        <TextView
+            android:id="@+id/garage_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garage Name"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_toLeftOf="@+id/image_layout"
+            android:layout_toRightOf="@+id/cover_image"
+            android:layout_below="@+id/service_charges"
+            />
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:id="@+id/edit_Image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_edit"
+                app:tint="@color/dark_blue" />
+            <ImageView
+                android:id="@+id/delete_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/dark_blue"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminPanal.MyGarageDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_Image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/back_Image"
+            android:text="Garage Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imageSlider_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/white">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_addServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageSlider_recycleView"
+                android:layout_margin="8dp"
+                android:background="@drawable/stroke_button_background"
+                android:text="Add services"
+                android:textColor="@color/dark_blue" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_addServices"
+                android:backgroundTint="@color/white"
+                >
+
+                <LinearLayout
+                    android:id="@+id/dataField_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/text_heading"
+                    android:layout_margin="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee Name"
+                        android:layout_marginTop="20dp"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/dark_blue"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_marqueName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/dark_blue"
+                        android:background="@drawable/border_layout"
+                        android:hint="Marquee Name"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee Owner Name"
+                        android:layout_marginTop="20dp"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/dark_blue"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_marqueOwnerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/dark_blue"
+                        android:background="@drawable/border_layout"
+                        android:hint="Marquee Owner Name"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marque Contact Number"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/dark_blue"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_marqueContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:textColorHint="@color/gray"
+                        android:inputType="number"
+                        android:textColor="@color/dark_blue"
+                        android:background="@drawable/border_layout"
+                        android:hint="contact Number"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee Bio"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/dark_blue"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_marqueBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:background="@drawable/border_layout"
+                        android:hint="bio..."
+                        android:gravity="top"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee Address"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/dark_blue"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_marqueAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="13sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:background="@drawable/border_layout"
+                        android:hint="Address..."
+                        android:gravity="top"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        >
+                        <Button
+                            android:id="@+id/btn_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Update"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/stroke_button_background"
+                            android:textAllCaps="false"
+                            app:cornerRadius="10dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/dark_blue"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_delete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delete"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/button_background"
+                            android:textAllCaps="false"
+                            app:cornerRadius="10dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

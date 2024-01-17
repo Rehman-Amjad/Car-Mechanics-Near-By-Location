@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminPanal.MoreGarageImageActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:gravity="center|start">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Add More Image"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/photoCount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total photo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_below="@+id/topLayout"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/photoCount_text"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum upload 2 photo of Products which helps to create trust by customer"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:padding="5dp"
+        android:background="#B2BCF6"
+        android:layout_below="@+id/view"
+        android:textColor="@color/dark_blue"
+        />
+
+    <ImageView
+        android:id="@+id/open_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/text_heading"
+        android:layout_marginLeft="10dp"
+        android:padding="8dp"
+        android:src="@drawable/upload_image"
+        app:tint="@color/dark_blue" />
+
+    <View
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/open_image"
+        android:background="@color/gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/open_image"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

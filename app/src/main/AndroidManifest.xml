@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarMechanics"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserStart.UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.UserChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.UserChatActviity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.GarageDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.ComplainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanal.BookGarageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Start.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearByPlace.PlaceOnMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearByPlace.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearByPlace.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.ServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.MyGarageDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.MoreGarageImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.GarageLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.GarageListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.CategoryListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AdminProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AdminBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AdminBookDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AddNewServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanal.AddGarageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.LogGarageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.LogChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.LogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.GarageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.AppNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.AppComplainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAppMain.AppAdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA_-_HAu0q4rAqIAiOWpJk8N2xyoi9f6yM" />
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminPanal.GarageLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#4C6171"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Garage current location"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_map_uplaod"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_background"
+            android:text="Save Location"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+</LinearLayout>
